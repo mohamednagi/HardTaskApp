@@ -24,7 +24,7 @@ class BrandsCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
         instance.getBrands { (returnedArray) in
             let url = URL(string: returnedArray[indexPath.row].image)
             URLSession.shared.dataTask(with: url!, completionHandler: { (data, _, _) in
-                if (data?.count)! > 0 {
+                if data != nil {
                 DispatchQueue.main.async {
                     cell.brandsImage.image = UIImage(data: data!)
                 }

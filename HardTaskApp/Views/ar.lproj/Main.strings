@@ -1,0 +1,48 @@
+/* Class = "UIButton"; normalTitle = "Area"; ObjectID = "9OS-r9-hZT"; */
+"9OS-r9-hZT.normalTitle" = "المنطقه";
+
+/* Class = "UITextField"; placeholder = "  123456"; ObjectID = "40y-pt-tuT"; */
+"40y-pt-tuT.placeholder" = "  123456";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fNc-JZ-vED"; */
+"fNc-JZ-vED.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GQX-JY-uRx"; */
+"GQX-JY-uRx.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Change Language"; ObjectID = "h39-LM-BYA"; */
+"h39-LM-BYA.normalTitle" = "تغيير اللغه";
+
+/* Class = "UITextField"; placeholder = "  Password"; ObjectID = "hi1-kJ-Fq6"; */
+"hi1-kJ-Fq6.placeholder" = "  الباسورد";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Imy-VK-Zvm"; */
+"Imy-VK-Zvm.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "  Full Name"; ObjectID = "KfK-GP-UCf"; */
+"KfK-GP-UCf.placeholder" = "  الاسم بالكامل";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lQL-Wt-eef"; */
+"lQL-Wt-eef.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Terms and conditions"; ObjectID = "M5h-2y-tBF"; */
+"M5h-2y-tBF.normalTitle" = "الشروط والاحكام";
+
+/* Class = "UIButton"; normalTitle = "Code"; ObjectID = "pYP-Cn-g7K"; */
+"pYP-Cn-g7K.normalTitle" = "الكود";
+
+/* Class = "UILabel"; text = "REGISTER"; ObjectID = "Q6N-vM-rnb"; */
+"Q6N-vM-rnb.text" = "التسجيل";
+
+/* Class = "UIButton"; normalTitle = "Country"; ObjectID = "rLb-aF-9iR"; */
+"rLb-aF-9iR.normalTitle" = "الدوله";
+
+/* Class = "UITextField"; placeholder = "  Email"; ObjectID = "rZT-lz-ph1"; */
+"rZT-lz-ph1.placeholder" = "  البريد الالكتروني";
+
+/* Class = "UILabel"; text = "By clicking register you agree to"; ObjectID = "YSH-xG-yNQ"; */
+"YSH-xG-yNQ.text" = "بالضغط هنا انت توافق علي الشروط";
+
+/* Class = "UIButton"; normalTitle = "City"; ObjectID = "zzn-Ax-OuA"; */
+"zzn-Ax-OuA.normalTitle" = "المدينه";
+

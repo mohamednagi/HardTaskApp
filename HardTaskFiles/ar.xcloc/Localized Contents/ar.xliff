@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="HardTaskApp/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="ar">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="HardTaskApp/Views/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ar">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.1" build-num="10B61"/>
+    </header>
+    <body>
+      <trans-unit id="9OS-r9-hZT.normalTitle">
+        <source>Area</source>
+        <target>المنطقه</target>
+        <note>Class = "UIButton"; normalTitle = "Area"; ObjectID = "9OS-r9-hZT";</note>
+      </trans-unit>
+      <trans-unit id="40y-pt-tuT.placeholder">
+        <source>  123456</source>
+        <target>  123456</target>
+        <note>Class = "UITextField"; placeholder = "  123456"; ObjectID = "40y-pt-tuT";</note>
+      </trans-unit>
+      <trans-unit id="GQX-JY-uRx.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "GQX-JY-uRx";</note>
+      </trans-unit>
+      <trans-unit id="Imy-VK-Zvm.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "Imy-VK-Zvm";</note>
+      </trans-unit>
+      <trans-unit id="KfK-GP-UCf.placeholder">
+        <source>  Full Name</source>
+        <target>  الاسم بالكامل</target>
+        <note>Class = "UITextField"; placeholder = "  Full Name"; ObjectID = "KfK-GP-UCf";</note>
+      </trans-unit>
+      <trans-unit id="M5h-2y-tBF.normalTitle">
+        <source>Terms and conditions</source>
+        <target>الشروط والاحكام</target>
+        <note>Class = "UIButton"; normalTitle = "Terms and conditions"; ObjectID = "M5h-2y-tBF";</note>
+      </trans-unit>
+      <trans-unit id="Q6N-vM-rnb.text">
+        <source>REGISTER</source>
+        <target>التسجيل</target>
+        <note>Class = "UILabel"; text = "REGISTER"; ObjectID = "Q6N-vM-rnb";</note>
+      </trans-unit>
+      <trans-unit id="YSH-xG-yNQ.text">
+        <source>By clicking register you agree to</source>
+        <target>بالضغط هنا انت توافق علي الشروط</target>
+        <note>Class = "UILabel"; text = "By clicking register you agree to"; ObjectID = "YSH-xG-yNQ";</note>
+      </trans-unit>
+      <trans-unit id="fNc-JZ-vED.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "fNc-JZ-vED";</note>
+      </trans-unit>
+      <trans-unit id="h39-LM-BYA.normalTitle">
+        <source>Change Language</source>
+        <target>تغيير اللغه</target>
+        <note>Class = "UIButton"; normalTitle = "Change Language"; ObjectID = "h39-LM-BYA";</note>
+      </trans-unit>
+      <trans-unit id="hi1-kJ-Fq6.placeholder">
+        <source>  Password</source>
+        <target>  الباسورد</target>
+        <note>Class = "UITextField"; placeholder = "  Password"; ObjectID = "hi1-kJ-Fq6";</note>
+      </trans-unit>
+      <trans-unit id="lQL-Wt-eef.text">
+        <source>Label</source>
+        <target>Label</target>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "lQL-Wt-eef";</note>
+      </trans-unit>
+      <trans-unit id="pYP-Cn-g7K.normalTitle">
+        <source>Code</source>
+        <target>الكود</target>
+        <note>Class = "UIButton"; normalTitle = "Code"; ObjectID = "pYP-Cn-g7K";</note>
+      </trans-unit>
+      <trans-unit id="rLb-aF-9iR.normalTitle">
+        <source>Country</source>
+        <target>الدوله</target>
+        <note>Class = "UIButton"; normalTitle = "Country"; ObjectID = "rLb-aF-9iR";</note>
+      </trans-unit>
+      <trans-unit id="rZT-lz-ph1.placeholder">
+        <source>  Email</source>
+        <target>  البريد الالكتروني</target>
+        <note>Class = "UITextField"; placeholder = "  Email"; ObjectID = "rZT-lz-ph1";</note>
+      </trans-unit>
+      <trans-unit id="zzn-Ax-OuA.normalTitle">
+        <source>City</source>
+        <target>المدينه</target>
+        <note>Class = "UIButton"; normalTitle = "City"; ObjectID = "zzn-Ax-OuA";</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

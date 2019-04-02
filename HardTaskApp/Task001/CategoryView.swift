@@ -54,7 +54,7 @@ class CategoryView: UIViewController, UICollectionViewDelegate, UICollectionView
             cell.categoryText.text = returnedArray[indexPath.row].text
             let url = URL(string: returnedArray[indexPath.row].image)
             URLSession.shared.dataTask(with: url!, completionHandler: { (data, _, _) in
-                if (data?.count)! > 0 {
+                if data != nil {
                 DispatchQueue.main.async {
                     cell.categoryImage.image = UIImage(data: data!)
                 }

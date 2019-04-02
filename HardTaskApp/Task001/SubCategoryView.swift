@@ -40,7 +40,7 @@ class SubCategoryView: CategoryView {
             cell.textLabel.text = returnedArray[indexPath.row].text
             let url = URL(string: returnedArray[indexPath.row].image)
             URLSession.shared.dataTask(with: url!, completionHandler: { (data, _, _) in
-                if (data?.count)! > 0 {
+                if data != nil {
                 DispatchQueue.main.async {
                     cell.imageView.image = UIImage(data: data!)
                 }

@@ -27,6 +27,9 @@
 		516EC692225382FA00C90546 /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EC68C225382FA00C90546 /* BrandModel.swift */; };
 		516EC693225382FA00C90546 /* BrandsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EC68D225382FA00C90546 /* BrandsCell.swift */; };
 		516EC6952253830400C90546 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EC6942253830400C90546 /* ServiceLayer.swift */; };
+		516EC69A22538E1C00C90546 /* LocalizationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EC69922538E1C00C90546 /* LocalizationHandler.swift */; };
+		516EC69C2253936300C90546 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EC69B2253936300C90546 /* Globals.swift */; };
+		516EC6A32253B64800C90546 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EC6A22253B64800C90546 /* Language.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,10 @@
 		516EC68C225382FA00C90546 /* BrandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
 		516EC68D225382FA00C90546 /* BrandsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrandsCell.swift; sourceTree = "<group>"; };
 		516EC6942253830400C90546 /* ServiceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		516EC6962253867800C90546 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		516EC69922538E1C00C90546 /* LocalizationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationHandler.swift; sourceTree = "<group>"; };
+		516EC69B2253936300C90546 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		516EC6A22253B64800C90546 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +98,8 @@
 				516EC6712253827F00C90546 /* Views */,
 				516EC65F2253820700C90546 /* AppDelegate.swift */,
 				516EC66B2253820800C90546 /* Info.plist */,
+				516EC69922538E1C00C90546 /* LocalizationHandler.swift */,
+				516EC6A22253B64800C90546 /* Language.swift */,
 			);
 			path = HardTaskApp;
 			sourceTree = "<group>";
@@ -109,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				516EC6942253830400C90546 /* ServiceLayer.swift */,
+				516EC69B2253936300C90546 /* Globals.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -191,6 +201,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 516EC6532253820700C90546;
 			productRefGroup = 516EC65D2253820700C90546 /* Products */;
@@ -221,11 +232,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				516EC682225382D600C90546 /* CategoryCellModel.swift in Sources */,
+				516EC6A32253B64800C90546 /* Language.swift in Sources */,
 				516EC681225382D600C90546 /* CategoriesCell.swift in Sources */,
 				516EC692225382FA00C90546 /* BrandModel.swift in Sources */,
 				516EC67F225382D600C90546 /* SubCategoryView.swift in Sources */,
 				516EC691225382FA00C90546 /* BestSellerCellModel.swift in Sources */,
 				516EC690225382FA00C90546 /* SellersCell.swift in Sources */,
+				516EC69C2253936300C90546 /* Globals.swift in Sources */,
 				516EC6952253830400C90546 /* ServiceLayer.swift in Sources */,
 				516EC6602253820700C90546 /* AppDelegate.swift in Sources */,
 				516EC680225382D600C90546 /* sentModel.swift in Sources */,
@@ -235,6 +248,7 @@
 				516EC683225382D600C90546 /* CategoryView.swift in Sources */,
 				516EC693225382FA00C90546 /* BrandsCell.swift in Sources */,
 				516EC686225382E800C90546 /* RegisterationView.swift in Sources */,
+				516EC69A22538E1C00C90546 /* LocalizationHandler.swift in Sources */,
 				516EC68E225382FA00C90546 /* BrandsCollectionViewCell.swift in Sources */,
 				516EC687225382E800C90546 /* WebView.swift in Sources */,
 			);
@@ -247,6 +261,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				516EC6642253820700C90546 /* Base */,
+				516EC6962253867800C90546 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -266,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -327,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -385,6 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKVSSJM9UR;
 				INFOPLIST_FILE = HardTaskApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrightCreations.HardTaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -403,6 +421,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKVSSJM9UR;
 				INFOPLIST_FILE = HardTaskApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,7 +429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrightCreations.HardTaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

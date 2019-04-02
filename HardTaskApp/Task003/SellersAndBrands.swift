@@ -61,7 +61,7 @@ class SellersAndBrands: UIViewController, UITableViewDelegate, UITableViewDataSo
                 cell.sellerPrice.text = returnedArray[indexPath.row].price! + returnedArray[indexPath.row].symbol!
                 let url = URL(string: returnedArray[indexPath.row].image!)
                 URLSession.shared.dataTask(with: url!, completionHandler: { (data, _, _) in
-                    if (data?.count)! > 0 {
+                    if data != nil {
                     DispatchQueue.main.async {
                         cell.sellerImage.image = UIImage(data: data!)
                     }

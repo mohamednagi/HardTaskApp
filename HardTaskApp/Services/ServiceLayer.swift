@@ -9,19 +9,6 @@
 import UIKit
 import WebKit
 
-let instance = ServiceLayer()
-let appDelegate = UIApplication.shared.delegate as! AppDelegate
-var categoryCellCollection = [CategoryCellModel]()
-var subCategoryCellCollection = [SubCategoryCellModel]()
-var bestSellerCellCollection = [BestSellerCellModel]()
-var brandCollection = [BrandModel]()
-
-
-var codes = [String]()
-var countries = [String]()
-var cities = [String]()
-var areas = [String]()
-
 class ServiceLayer {
     
     var categoriesCollectionText = [String]()
@@ -35,7 +22,7 @@ class ServiceLayer {
                 print(error?.localizedDescription as Any)
             } else {
                 do {
-                    if (data?.count)! > 0 {
+                    if data != nil {
                         guard let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [[String:AnyObject]] else {return}
                         DispatchQueue.main.async {
                             for result in json {
@@ -69,7 +56,7 @@ class ServiceLayer {
                 print(error?.localizedDescription as Any)
             } else {
                 do {
-                    if (data?.count)! > 0 {
+                    if data != nil {
                         guard let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [[String:AnyObject]] else {return}
                         DispatchQueue.main.async {
                             for result in json {
@@ -102,7 +89,7 @@ class ServiceLayer {
                 print(error?.localizedDescription as Any)
             } else {
                 do {
-                    if (data?.count)! > 0 {
+                    if data != nil {
                         guard let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [[String:AnyObject]] else {return}
                         for result in json {
                             guard let code = result["Code"] as? String else {return}
@@ -128,11 +115,16 @@ class ServiceLayer {
                 print(error?.localizedDescription as Any)
             } else {
                 do {
-                    if (data?.count)! > 0 {
+                    if data != nil {
                         guard let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [[String:AnyObject]] else {return}
                         for result in json {
+                            if Language.currentLanguage() == "en" {
                             guard let country = result["TitleEN"] as? String else {return}
                             countries.append(country)
+                            } else {
+                                guard let country = result["TitleAR"] as? String else {return}
+                                countries.append(country)
+                            }
                         }
                         completionHandler(countries)
                     } else {
@@ -154,11 +146,16 @@ class ServiceLayer {
                 print(error?.localizedDescription as Any)
             } else {
                 do {
-                    if (data?.count)! > 0 {
+                    if data != nil {
                         guard let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [[String:AnyObject]] else {return}
                         for result in json {
+                            if Language.currentLanguage() == "en" {
                             guard let city = result["TitleEN"] as? String else {return}
                             cities.append(city)
+                            } else {
+                                guard let city = result["TitleAR"] as? String else {return}
+                                cities.append(city)
+                            }
                         }
                         completionHandler(cities)
                     } else {
@@ -180,11 +177,16 @@ class ServiceLayer {
                 print(error?.localizedDescription as Any)
             } else {
                 do {
-                    if (data?.count)! > 0 {
+                    if data != nil {
                         guard let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [[String:AnyObject]] else {return}
                         for result in json {
+                            if Language.currentLanguage() == "en" {
                             guard let area = result["TitleEN"] as? String else {return}
                             areas.append(area)
+                            } else {
+                                guard let area = result["TitleAR"] as? String else {return}
+                                areas.append(area)
+                            }
                         }
                         completionHandler(areas)
                     } else {
@@ -213,7 +215,7 @@ class ServiceLayer {
                 print(error?.localizedDescription as Any)
             } else {
                 do {
-                    if (data?.count)! > 0 {
+                    if data != nil {
                         guard let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [[String:AnyObject]] else {return}
                         DispatchQueue.main.async {
                             for result in json {
@@ -245,7 +247,7 @@ class ServiceLayer {
                 print(error?.localizedDescription as Any)
             } else {
                 do {
-                    if (data?.count)! > 0 {
+                    if data != nil {
                         guard let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [[String:AnyObject]] else {return}
                         DispatchQueue.main.async {
                             for result in json {

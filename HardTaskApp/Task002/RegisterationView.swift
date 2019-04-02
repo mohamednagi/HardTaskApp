@@ -19,9 +19,11 @@ class RegisterationView: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     var pickerData = [String]()
     var flag = ""
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         pickerView.isHidden = true
+        changeImages()
     }
     
     
@@ -79,6 +81,7 @@ class RegisterationView: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     }
     
     @IBAction func codeAction(_ sender: UIButton) {
+        pickerData.removeAll()
         flag = "code"
         instance.getCode { (returnedArray) in
             self.pickerData = returnedArray
@@ -89,6 +92,7 @@ class RegisterationView: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         pickerView.isHidden = false
     }
     @IBAction func countryAction(_ sender: UIButton) {
+        pickerData.removeAll()
         flag = "country"
         instance.getCountry { (returnedArray) in
             self.pickerData = returnedArray
@@ -99,6 +103,7 @@ class RegisterationView: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         pickerView.isHidden = false
     }
     @IBAction func cityAction(_ sender: UIButton) {
+        pickerData.removeAll()
         flag = "city"
         instance.getCity { (returnedArray) in
             self.pickerData = returnedArray
@@ -109,6 +114,7 @@ class RegisterationView: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         pickerView.isHidden = false
     }
     @IBAction func areaAction(_ sender: UIButton) {
+        pickerData.removeAll()
         flag = "area"
         instance.getArea { (returnedArray) in
             self.pickerData = returnedArray
@@ -125,10 +131,34 @@ class RegisterationView: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         self.navigationController?.pushViewController(desVC, animated: true)
     }
     
-    
-    @IBAction func languageAction(_ sender: UIButton) {
-        
+    func changeImages() {
+        if Language.currentLanguage() == "en" {
+            codeBu.setBackgroundImage(UIImage(named: "list_small_en"), for: .normal)
+            countryBu.setBackgroundImage(UIImage(named: "list_en"), for: .normal)
+            cityBu.setBackgroundImage(UIImage(named: "list_en"), for: .normal)
+            areaBu.setBackgroundImage(UIImage(named: "list_en"), for: .normal)
+//            Language.setAppLanguage(language: "ar")
+        } else {
+            codeBu.setBackgroundImage(UIImage(named: "list_small_ar"), for: .normal)
+            countryBu.setBackgroundImage(UIImage(named: "list_ar"), for: .normal)
+            cityBu.setBackgroundImage(UIImage(named: "list_ar"), for: .normal)
+            areaBu.setBackgroundImage(UIImage(named: "list_ar"), for: .normal)
+//            Language.setAppLanguage(language: "en")
+        }
     }
     
+    
+    @IBAction func languageAction(_ sender: UIButton) {
+        changeImages()
+        if Language.currentLanguage() == "ar" {
+            Language.setAppLanguage(language: "en")
+        }else {
+            Language.setAppLanguage(language: "ar")
+        }
+        
+        let window = UIApplication.shared.delegate?.window
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        window??.rootViewController = sb.instantiateViewController(withIdentifier: "RegisterVC")
+    }
 }
 
