@@ -40,5 +40,3 @@ func exchangeMethodsForClass(className:AnyClass, originalSelector:Selector, over
         method_exchangeImplementations(originalMethod, overrideMethod)
     }
 }
-
-

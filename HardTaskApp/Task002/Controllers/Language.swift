@@ -12,13 +12,13 @@ import Foundation
 class Language {
     
     class func currentLanguage() -> String {
-        let languages = defaults.value(forKey: "AppleLanguages") as! [String]
+        let languages = defaults.object(forKey: "AppleLanguages") as! [String]
         let firstLanguage = languages.first
-        return firstLanguage ?? "en"
+        return firstLanguage!
     }
     
     class func setAppLanguage(language:String) {
-        defaults.set(language, forKey: "AppleLanguages")
+        defaults.set([language, currentLanguage()], forKey: "AppleLanguages")
         defaults.synchronize()
     }
     

@@ -22,6 +22,4 @@ var countries = [String]()
 var cities = [String]()
 var areas = [String]()
 
-
-//let preferredLanguage = NSLocale.preferredLanguages[0]
 let defaults = UserDefaults.standard

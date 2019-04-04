@@ -16,6 +16,12 @@ class RegisterationView: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     @IBOutlet weak var areaBu: UIButton!
     @IBOutlet weak var pickerView: UIPickerView!
     
+    @IBOutlet weak var fullName: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var codeNumber: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var registeration: UILabel!
+    
     var pickerData = [String]()
     var flag = ""
     
@@ -23,7 +29,7 @@ class RegisterationView: UIViewController, UIPickerViewDelegate, UIPickerViewDat
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         pickerView.isHidden = true
-        changeImages()
+        changeUI()
     }
     
     
@@ -131,27 +137,31 @@ class RegisterationView: UIViewController, UIPickerViewDelegate, UIPickerViewDat
         self.navigationController?.pushViewController(desVC, animated: true)
     }
     
-    func changeImages() {
+    func changeUI() {
         if Language.currentLanguage() == "en" {
             codeBu.setBackgroundImage(UIImage(named: "list_small_en"), for: .normal)
             countryBu.setBackgroundImage(UIImage(named: "list_en"), for: .normal)
             cityBu.setBackgroundImage(UIImage(named: "list_en"), for: .normal)
             areaBu.setBackgroundImage(UIImage(named: "list_en"), for: .normal)
-//            Language.setAppLanguage(language: "ar")
         } else {
             codeBu.setBackgroundImage(UIImage(named: "list_small_ar"), for: .normal)
             countryBu.setBackgroundImage(UIImage(named: "list_ar"), for: .normal)
             cityBu.setBackgroundImage(UIImage(named: "list_ar"), for: .normal)
             areaBu.setBackgroundImage(UIImage(named: "list_ar"), for: .normal)
-//            Language.setAppLanguage(language: "en")
+            fullName.font = UIFont(name: "GEDinarOne", size: 14)
+            password.font = UIFont(name: "GEDinarOne", size: 14)
+            codeNumber.font = UIFont(name: "GEDinarOne", size: 14)
+            email.font = UIFont(name: "GEDinarOne", size: 14)
+            registeration.font = UIFont(name: "GEDinarOne", size: 14)
         }
     }
     
     
     @IBAction func languageAction(_ sender: UIButton) {
-        changeImages()
+        changeUI()
+        LocalizationHandler.doTheExchange()
         if Language.currentLanguage() == "ar" {
-            Language.setAppLanguage(language: "en")
+            Language.setAppLanguage(language: "en-US")
         }else {
             Language.setAppLanguage(language: "ar")
         }

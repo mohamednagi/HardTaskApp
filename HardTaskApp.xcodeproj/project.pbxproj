@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		513B0F592255F971003377A7 /* GE Dinar One Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GE Dinar One Medium.ttf"; sourceTree = "<group>"; };
+		513B0F5A2255F971003377A7 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		516EC65C2253820700C90546 /* HardTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HardTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516EC65F2253820700C90546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		516EC6642253820700C90546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		513B0F5B2255FE1B003377A7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				516EC67A225382D500C90546 /* CategoriesCell.swift */,
+				516EC676225382D500C90546 /* SubCategoriesCollectionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		513B0F5C2255FE38003377A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				516EC679225382D500C90546 /* sentModel.swift */,
+				516EC67B225382D600C90546 /* CategoryCellModel.swift */,
+				516EC677225382D500C90546 /* SubCategoryCellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		513B0F5D2255FE4C003377A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				516EC67C225382D600C90546 /* CategoryView.swift */,
+				516EC678225382D500C90546 /* SubCategoryView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		513B0F5E2255FE6B003377A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				516EC685225382E800C90546 /* WebView.swift */,
+				516EC69922538E1C00C90546 /* LocalizationHandler.swift */,
+				516EC6A22253B64800C90546 /* Language.swift */,
+				516EC684225382E800C90546 /* RegisterationView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		513B0F5F2255FE84003377A7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				516EC688225382F900C90546 /* BrandsCollectionViewCell.swift */,
+				516EC68A225382F900C90546 /* SellersCell.swift */,
+				516EC68D225382FA00C90546 /* BrandsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		513B0F602255FE99003377A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				516EC68B225382FA00C90546 /* BestSellerCellModel.swift */,
+				516EC68C225382FA00C90546 /* BrandModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		513B0F612255FEA8003377A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				516EC689225382F900C90546 /* SellersAndBrands.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		516EC6532253820700C90546 = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +166,6 @@
 				516EC6712253827F00C90546 /* Views */,
 				516EC65F2253820700C90546 /* AppDelegate.swift */,
 				516EC66B2253820800C90546 /* Info.plist */,
-				516EC69922538E1C00C90546 /* LocalizationHandler.swift */,
-				516EC6A22253B64800C90546 /* Language.swift */,
 			);
 			path = HardTaskApp;
 			sourceTree = "<group>";
@@ -110,6 +176,8 @@
 				516EC6632253820700C90546 /* Main.storyboard */,
 				516EC6662253820800C90546 /* Assets.xcassets */,
 				516EC6682253820800C90546 /* LaunchScreen.storyboard */,
+				513B0F592255F971003377A7 /* GE Dinar One Medium.ttf */,
+				513B0F5A2255F971003377A7 /* Montserrat-Regular.ttf */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,12 +194,9 @@
 		516EC6732253828600C90546 /* Task003 */ = {
 			isa = PBXGroup;
 			children = (
-				516EC68B225382FA00C90546 /* BestSellerCellModel.swift */,
-				516EC68C225382FA00C90546 /* BrandModel.swift */,
-				516EC68D225382FA00C90546 /* BrandsCell.swift */,
-				516EC688225382F900C90546 /* BrandsCollectionViewCell.swift */,
-				516EC689225382F900C90546 /* SellersAndBrands.swift */,
-				516EC68A225382F900C90546 /* SellersCell.swift */,
+				513B0F612255FEA8003377A7 /* Controllers */,
+				513B0F602255FE99003377A7 /* Models */,
+				513B0F5F2255FE84003377A7 /* Cells */,
 			);
 			path = Task003;
 			sourceTree = "<group>";
@@ -139,8 +204,7 @@
 		516EC6742253828900C90546 /* Task002 */ = {
 			isa = PBXGroup;
 			children = (
-				516EC684225382E800C90546 /* RegisterationView.swift */,
-				516EC685225382E800C90546 /* WebView.swift */,
+				513B0F5E2255FE6B003377A7 /* Controllers */,
 			);
 			path = Task002;
 			sourceTree = "<group>";
@@ -148,13 +212,9 @@
 		516EC6752253829000C90546 /* Task001 */ = {
 			isa = PBXGroup;
 			children = (
-				516EC67A225382D500C90546 /* CategoriesCell.swift */,
-				516EC67B225382D600C90546 /* CategoryCellModel.swift */,
-				516EC67C225382D600C90546 /* CategoryView.swift */,
-				516EC679225382D500C90546 /* sentModel.swift */,
-				516EC676225382D500C90546 /* SubCategoriesCollectionCell.swift */,
-				516EC677225382D500C90546 /* SubCategoryCellModel.swift */,
-				516EC678225382D500C90546 /* SubCategoryView.swift */,
+				513B0F5D2255FE4C003377A7 /* Controllers */,
+				513B0F5C2255FE38003377A7 /* Models */,
+				513B0F5B2255FE1B003377A7 /* Cells */,
 			);
 			path = Task001;
 			sourceTree = "<group>";
@@ -191,11 +251,12 @@
 				TargetAttributes = {
 					516EC65B2253820700C90546 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 516EC6572253820700C90546 /* Build configuration list for PBXProject "HardTaskApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -389,8 +450,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -403,10 +463,7 @@
 				DEVELOPMENT_TEAM = RKVSSJM9UR;
 				INFOPLIST_FILE = HardTaskApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrightCreations.HardTaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -422,10 +479,7 @@
 				DEVELOPMENT_TEAM = RKVSSJM9UR;
 				INFOPLIST_FILE = HardTaskApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrightCreations.HardTaskApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
